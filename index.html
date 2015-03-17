@@ -1,96 +1,307 @@
 <!doctype html>
 <html lang="en">
 
-	<head>
-		<meta charset="utf-8">
+    <head>
+        <meta charset="utf-8">
 
-		<title>reveal.js - The HTML Presentation Framework</title>
+        <title>reveal.js - The HTML Presentation Framework</title>
 
-		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
-		<meta name="author" content="Hakim El Hattab">
+        <meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+        <meta name="author" content="Hakim El Hattab">
 
-		<meta name="apple-mobile-web-app-capable" content="yes" />
-		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<link rel="stylesheet" href="src/reveal.js/css/reveal.min.css">
-		<link rel="stylesheet" href="src/reveal.js/css/theme/default.css" id="theme">
+        <link rel="stylesheet" href="src/reveal.js/css/reveal.min.css">
+        <link rel="stylesheet" href="src/reveal.js/css/theme/default.css" id="theme">
 
-		<!-- For syntax highlighting -->
-		<link rel="stylesheet" href="src/reveal.js/lib/css/zenburn.css">
+        <!-- For syntax highlighting -->
+        <link rel="stylesheet" href="src/reveal.js/lib/css/zenburn.css">
 
-		<link rel="stylesheet" href="css/custom.css">
+        <link rel="stylesheet" href="css/custom.css">
 
-		<!-- If the query includes 'print-pdf', include the PDF print sheet -->
-		<script>
-			if( window.location.search.match( /print-pdf/gi ) ) {
-				var link = document.createElement( 'link' );
-				link.rel = 'stylesheet';
-				link.type = 'text/css';
-				link.href = 'src/reveal.js/css/print/pdf.css';
-				document.getElementsByTagName( 'head' )[0].appendChild( link );
-			}
-		</script>
+        <!-- If the query includes 'print-pdf', include the PDF print sheet -->
+        <script>
+            if( window.location.search.match( /print-pdf/gi ) ) {
+                var link = document.createElement( 'link' );
+                link.rel = 'stylesheet';
+                link.type = 'text/css';
+                link.href = 'src/reveal.js/css/print/pdf.css';
+                document.getElementsByTagName( 'head' )[0].appendChild( link );
+            }
+        </script>
 
-		<!--[if lt IE 9]>
-		<script src="src/reveal.js/lib/js/html5shiv.js"></script>
-		<![endif]-->
-	</head>
+        <!--[if lt IE 9]>
+        <script src="src/reveal.js/lib/js/html5shiv.js"></script>
+        <![endif]-->
+    </head>
 
-	<body>
+    <body>
 
-		<div class="background">
-			<a href="http://geekgirlscarrots.pl/"><img src="gfx/ggc_logo.svg"></a>
-		</div>
+        <div class="background">
+            <a href="http://geekgirlscarrots.pl/"><img src="gfx/ggc_logo.svg"></a>
+        </div>
 
-		<div class="reveal">
+        <div class="reveal">
 
-			<!-- Any section element inside of this container is displayed as a slide -->
-			<div class="slides">
-				<section>
-					<h1>Code Carrots</h1>
-					<h3>Zajęcia z programowania w języku JavaScript</h3>
-					<p>
-						<small>Ogranizatorka zajęć: <a target="_blank" href="mailto:zuzapodwinska@gmail.com">Zuza Podwińska</a></small>
-					</p>
-				</section>
-			</div>
+            <!-- Any section element inside of this container is displayed as a slide -->
+            <div class="slides">
+                <section>
+                    <h1>Code Carrots</h1>
+                    <h3>Struktury danych i podstawy terminala</h3>
+                    <p>
+                        <small>Ogranizatorka zajęć: <a target="_blank" href="mailto:zuzapodwinska@gmail.com">Zuza Podwińska</a></small>
+                        <small>Autor prezentacji: <a target="_blank" href="mailto:michal.matulka@protonmail.ch">Michał Matulka</a></small>
+                    </p>
+                </section>
+                <section>
+                    <h2>Struktury danych</h2>
+                    <ul>
+                        <li>Wartości logiczne</li>
+                        <li>Ciągi znaków</li>
+                        <li>Liczby</li>
+                        <li>Tablice</li>
+                        <li>Obiekty</li>
+                    </ul>
+                </section>
+                <section>
+                    <h2>Wartości logiczne</h2>
+                    <pre>
+                            <code class="javascript" data-trim contenteditable>var prawda = true;
+var falsz = false;</code>
+                    </pre>
+                </section>
+                <section>
+                    <h2>Ciągi znaków</h2>
+                    <pre>
+                            <code class="javascript" data-trim contenteditable>var ciagZnakow = 'Witaj Świecie!';</code>
+                    </pre>
+                </section>
+                <section>
+                    <h2>Liczby</h2>
+                    <pre>
+                            <code class="javascript" data-trim contenteditable>var calkowita = 1337;
+var zmiennoprzecinkowa = 12.3;</code>
+                    </pre>
+                </section>
+                <section>
+                    <h2>Tablice</h2>
+                    <pre>
+                            <code class="javascript" data-trim contenteditable>var tablica = [4,3,2,1];</code>
+                    </pre>
+                </section>
+                <section>
+                    <h2>Obiekty</h2>
+                    <pre><code class="javascript" data-trim contenteditable>var osoba = {
+    'imie': 'Michał',
+    'nazwisko': 'Matulka',
+    'wzrost': 184,
+    'znaJavascript': true,
+    'zalety': ['przystojny', 'inteligentny', 'charyzmatyczny', 'uprzejmy', 'skromny'],
+    'wady': []
+};</code></pre>
+                </section>
+                <section>
+                    <h2>Zagnieżdżanie struktur danych</h2>
+                    <pre><code class="javascript" data-trim contenteditable>var mentorzy = {
+    'Michał': {
+        'imie': 'Michał',
+        'nazwisko': 'Matulka',
+        'wzrost': 184,
+        'znaJavascript': true,
+        'zalety': ['przystojny', 'inteligentny', 'charyzmatyczny', 'uprzejmy', 'skromny'],
+        'wady': []
+    },
+    Artur: {
+        'imie': 'Artur',
+        'nazwisko': 'Delura',
+        'wzrost': 131,
+        'znaJavascript': true,
+        'zalety': [],
+        'wady': ['ma pchły', 'nie rośnie']
+    }
+};</code></pre>
+                </section>
+                <section>
+                    <h2>JSON</h2>
+                    <p>JSON - nazwa sposobu zapisu danych w języku JavaScript. Rozwinięcie skrótu to "JavaScript Object Notation", czyli "Notacja obiektowa JavaScript"</p>
+                </section>
+                <section>
+                    <h2>Struktury danych a wartości zmiennych</h2>
+                    <p>Do wyrażania wartości zmiennych w języku JavaScript używamy formatu JSON.</p>
+                </section>
+                <section>
+                    <h2>Konwersja danych na ciąg znaków</h2>
+                    <pre><code class="javascript" data-trim contenteditable>JSON.stringify(mentorzy);</code></pre>
+                    <pre><code class="javascript" data-trim contenteditable>JSON.parse('{"zwierze": "Koń"}');</code></pre>
+                </section>
+								<section>
+										<h1>Code Carrots</h1>
+										<h3>Podstawy terminala</h3>
+										<p>
+												<small>Ogranizatorka zajęć: <a target="_blank" href="mailto:zuzapodwinska@gmail.com">Zuza Podwińska</a></small>
+												<small>Autor prezentacji: <a target="_blank" href="mailto:michal.matulka@protonmail.ch">Michał Matulka</a></small>
+										</p>
+								</section>
+								<section>
+										<h2>Instalujemy Git Bash</h2>
+								</section>
+								<section>
+									<h2>Ścieżki w terminalu</h2>
+									<h3>Separator ścieżki: /</h3>
+								</section>
+								<section>
+										<h2>Komendy</h2>
+										<ul>
+											<li>cd</li>
+											<li>ls</li>
+											<li>cp</li>
+											<li>mv</li>
+											<li>rm</li>
+											<li>touch</li>
+											<li>mkdir</li>
+										</ul>
+								</section>
+								<section>
+									<h2>Flaga --help</h2>
+								</section>
+								<section>
+										<h2>Komenda cd</h2>
+										<h3>Zmienia bieżący katalog</h3>
+								</section>
+								<section>
+									<h2>Użycie komendy cd</h2>
+									<p>Wejście do katalogu mojKatalog</p>
+									<pre><code class="bash" data-trim contenteditable>cd mojKatalog</code></pre>
+									<p>Wyjście do katalogu wyżej</p>
+									<pre><code class="bash" data-trim contenteditable>cd ..</code></pre>
+									<p>Wejście do katalogu głębiej</p>
+									<pre><code class="bash" data-trim contenteditable>cd mojKatalog/mojDrugiKatalog</code></pre>
+								</section>
+								<section>
+									<h2>Katalogi "specjalne"</h2>
+									<ul>
+										<li>.. - katalog wyżej</li>
+										<li>. - katalog bieżący</li>
+									</ul>
+								</section>
+								<section>
+										<h2>Komenda ls</h2>
+										<h3>Pokazuje listę plików w bieżącym katalogu</h3>
+								</section>
+								<section>
+									<h2>Użycie komendy ls</h2>
+									<p>Wyświetlenie plików w bieżącym katalogu</p>
+									<pre><code class="bash" data-trim contenteditable>ls</code></pre>
+									<p>Wyświetlenie plików w bieżącym katalogu razem z ukrytymi i specjalnymi</p>
+									<pre><code class="bash" data-trim contenteditable>ls -a</code></pre>
+									<p>Wyświetlenie plików w bieżącym katalogu w postaci listy</p>
+									<pre><code class="bash" data-trim contenteditable>ls -l</code></pre>
+									<p>Wyświetlenie plików w bieżącym katalogu w postaci listy razem z ukrytymi i specjalnymi</p>
+									<pre><code class="bash" data-trim contenteditable>ls -la</code></pre>
+								</section>
+								<section>
+										<h2>Komenda cp</h2>
+										<h3>Kopiuje pliki</h3>
+								</section>
+								<section>
+									<h2>Użycie komendy cp</h2>
+									<p>Skopiowanie pliku</p>
+									<pre><code class="bash" data-trim contenteditable>cp plik.txt skopiowany-plik.txt</code></pre>
+									<p>Skopiowanie pliku do innego katalogu z inną nazwą</p>
+									<pre><code class="bash" data-trim contenteditable>cp plik.txt ../skopiowany-plik.txt</code></pre>
+									<p>Skopiowanie pliku do innego katalogu z tą samą</p>
+									<pre><code class="bash" data-trim contenteditable>cp plik.txt ../</code></pre>
+									<p>Skopiowanie katalogu wraz z zawartością</p>
+									<pre><code class="bash" data-trim contenteditable>cp -r mojKatalog mojSkopiowanyKatalog</code></pre>
+								</section>
+								<section>
+										<h2>Komenda mv</h2>
+										<h3>Przenosi lub zmienia nazwę pliku</h3>
+								</section>
+								<section>
+									<h2>Użycie komendy mv</h2>
+									<p>Zmiana nazwy / przeniesienie pliku</p>
+									<pre><code class="bash" data-trim contenteditable>mv plik.txt przeniesiony-plik.txt</code></pre>
+									<p>Przeniesienie pliku do innego katalogu z inną nazwą</p>
+									<pre><code class="bash" data-trim contenteditable>mv plik.txt ../przeniesiony-plik.txt</code></pre>
+									<p>Przeniesienie pliku do innego katalogu z tą samą nazwą</p>
+									<pre><code class="bash" data-trim contenteditable>mv plik.txt ../</code></pre>
+									<p>Przeniesienie katalogu wraz z zawartością</p>
+									<pre><code class="bash" data-trim contenteditable>mv -r mojKatalog mojPrzeniesionyKatalog</code></pre>
+								</section>
+								<section>
+										<h2>Komenda rm</h2>
+										<h3>Usuwa pliki i katalogi</h3>
+								</section>
+								<section>
+									<h2>Użycie komendy rm</h2>
+									<p>Usunięcie pliku</p>
+									<pre><code class="bash" data-trim contenteditable>rm plik.txt</code></pre>
+									<p>Usunięcie katalogu wraz z zawartością</p>
+									<pre><code class="bash" data-trim contenteditable>rm -r mojKatalog</code></pre>
+									<p>Usunięcie pliku / katalogu wraz z zawartością bez pytania o kwestie uprawnień</p>
+									<pre><code class="bash" data-trim contenteditable>rm -rf mojKatalog</code></pre>
+								</section>
+								<section>
+										<h2>Komenda touch</h2>
+										<h3>Tworzy pusty plik</h3>
+								</section>
+								<section>
+									<h2>Użycie komendy touch</h2>
+									<p>Utworzenie pustego pliku</p>
+									<pre><code class="bash" data-trim contenteditable>touch plik.txt</code></pre>
+								</section>
+								<section>
+										<h2>Komenda mkdir</h2>
+										<h3>Tworzy pusty katalog</h3>
+								</section>
+								<section>
+									<h2>Użycie komendy mkdir</h2>
+									<p>Utworzenie pustego katalogu</p>
+									<pre><code class="bash" data-trim contenteditable>mkdir mojKatalog</code></pre>
+								</section>
+								<section>
+									<h2>Podziękował ;)</h2>
+								</section>
+            </div>
 
-		</div>
+        </div>
 
-		<script src="src/reveal.js/lib/js/head.min.js"></script>
-		<script src="src/reveal.js/js/reveal.min.js"></script>
+        <script src="src/reveal.js/lib/js/head.min.js"></script>
+        <script src="src/reveal.js/js/reveal.min.js"></script>
 
-		<script>
+        <script>
 
-			// Full list of configuration options available here:
-			// https://github.com/hakimel/reveal.js#configuration
-			Reveal.initialize({
-				controls: true,
-				progress: true,
-				history: true,
-				center: true,
+            // Full list of configuration options available here:
+            // https://github.com/hakimel/reveal.js#configuration
+            Reveal.initialize({
+                controls: true,
+                progress: true,
+                history: true,
+                center: true,
 
-				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
-				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+                theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+                transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
 
-				// Parallax scrolling
-				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
-				// parallaxBackgroundSize: '2100px 900px',
+                // Parallax scrolling
+                // parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+                // parallaxBackgroundSize: '2100px 900px',
 
-				// Optional libraries used to extend on reveal.js
-				dependencies: [
-					{ src: 'src/reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
-					{ src: 'src/reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'src/reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'src/reveal.js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
-					{ src: 'src/reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
-					{ src: 'src/reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
-				]
-			});
+                // Optional libraries used to extend on reveal.js
+                dependencies: [
+                    { src: 'src/reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+                    { src: 'src/reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: 'src/reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: 'src/reveal.js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+                    { src: 'src/reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+                    { src: 'src/reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+                ]
+            });
 
-		</script>
+        </script>
 
-	</body>
+    </body>
 </html>
